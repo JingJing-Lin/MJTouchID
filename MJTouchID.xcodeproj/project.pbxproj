@@ -13,6 +13,7 @@
 		AE740DDA1EAF30AD0043B1A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE740DD81EAF30AD0043B1A2 /* Main.storyboard */; };
 		AE740DDC1EAF30AE0043B1A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE740DDB1EAF30AE0043B1A2 /* Assets.xcassets */; };
 		AE740DDF1EAF30AE0043B1A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE740DDD1EAF30AE0043B1A2 /* LaunchScreen.storyboard */; };
+		AE740DE91EAF312B0043B1A2 /* MJTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = AE740DE81EAF312B0043B1A2 /* MJTouchID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AE740DDB1EAF30AE0043B1A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE740DDE1EAF30AE0043B1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE740DE01EAF30AE0043B1A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE740DE71EAF312B0043B1A2 /* MJTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTouchID.h; sourceTree = "<group>"; };
+		AE740DE81EAF312B0043B1A2 /* MJTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTouchID.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		AE740DCE1EAF30AD0043B1A2 /* MJTouchID */ = {
 			isa = PBXGroup;
 			children = (
+				AE740DE61EAF30FF0043B1A2 /* MJTouchID */,
 				AE740DD21EAF30AD0043B1A2 /* AppDelegate.h */,
 				AE740DD31EAF30AD0043B1A2 /* AppDelegate.m */,
 				AE740DD51EAF30AD0043B1A2 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				AE740DD01EAF30AD0043B1A2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE740DE61EAF30FF0043B1A2 /* MJTouchID */ = {
+			isa = PBXGroup;
+			children = (
+				AE740DE71EAF312B0043B1A2 /* MJTouchID.h */,
+				AE740DE81EAF312B0043B1A2 /* MJTouchID.m */,
+			);
+			path = MJTouchID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE740DD71EAF30AD0043B1A2 /* ViewController.m in Sources */,
+				AE740DE91EAF312B0043B1A2 /* MJTouchID.m in Sources */,
 				AE740DD41EAF30AD0043B1A2 /* AppDelegate.m in Sources */,
 				AE740DD11EAF30AD0043B1A2 /* main.m in Sources */,
 			);
@@ -275,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H2538H4P3P;
 				INFOPLIST_FILE = MJTouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MJTouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H2538H4P3P;
 				INFOPLIST_FILE = MJTouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MJTouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
