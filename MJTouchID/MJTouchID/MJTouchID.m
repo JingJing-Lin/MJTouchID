@@ -4,7 +4,7 @@
 //
 //  Created by YXCZ on 17/4/25.
 //  Copyright © 2017年 林民敬. All rights reserved.
-//  http://www.jianshu.com/u/2a2051ad6a5d
+//  http://www.jianshu.com/u/2a2051ad6a5d 我的简书博客
 
 #import "MJTouchID.h"
 #import <LocalAuthentication/LocalAuthentication.h>
