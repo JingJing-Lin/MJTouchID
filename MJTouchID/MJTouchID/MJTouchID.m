@@ -103,7 +103,7 @@
                         break;
                     case LAErrorTouchIDLockout:{
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            NSLog(@"TouchID 被锁定(连续多次验证TouchID失败,系统需要用户手动输入密码)");
+                            NSLog(@"TouchID 被锁定(连续多次验证TouchID失败,需要用户在设置中重新解锁)");
                             block(MJTouchIDStateTouchIDLockout,error);
                         });
                     }

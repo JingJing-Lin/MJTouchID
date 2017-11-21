@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MJTouchID.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface ViewController ()
 
@@ -23,8 +24,29 @@
     [touchIDButton addTarget:self action:@selector(touchVerification) forControlEvents:UIControlEventTouchDown];
     touchIDButton.frame = CGRectMake((self.view.frame.size.width / 2) - 40, (self.view.frame.size.height / 2) - 40, 80, 80);
     [self.view addSubview:touchIDButton];
-    
+
     [self touchVerification];
+    
+//    LAContext *myContext = [[LAContext alloc] init];
+//    NSError *authError = nil;
+//    NSString *myLocalizedReasonString = @"刷脸验证";
+//
+//    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
+//        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+//                  localizedReason:myLocalizedReasonString
+//                            reply:^(BOOL success, NSError *error) {
+//                                if (success) {
+//                                    // User authenticated successfully, take appropriate action
+//                                    NSLog(@"success");
+//                                } else {
+//                                    // User did not authenticate successfully, look at error and take appropriate action
+//                                    NSLog(@"failed");
+//                                }
+//                            }];
+//    } else {
+//        // Could not evaluate policy; look at authError and present an appropriate message to user
+//        NSLog(@"not support");
+//    }
 }
 
 -(void)touchVerification
@@ -37,6 +59,8 @@
             NSLog(@"--TouchID 被用户手动取消");
         }else if (state == MJTouchIDStateSuccess){
             NSLog(@"--TouchID验证成功");
+        }else if (state == MJTouchIDStateFail){
+            NSLog(@"--验证失败");
         }else if (state == MJTouchIDStateInputPassword){
             NSLog(@"--用户选择手动输入密码");
         }
