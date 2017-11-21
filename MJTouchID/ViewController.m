@@ -26,27 +26,6 @@
     [self.view addSubview:touchIDButton];
 
     [self touchVerification];
-    
-//    LAContext *myContext = [[LAContext alloc] init];
-//    NSError *authError = nil;
-//    NSString *myLocalizedReasonString = @"刷脸验证";
-//
-//    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
-//        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-//                  localizedReason:myLocalizedReasonString
-//                            reply:^(BOOL success, NSError *error) {
-//                                if (success) {
-//                                    // User authenticated successfully, take appropriate action
-//                                    NSLog(@"success");
-//                                } else {
-//                                    // User did not authenticate successfully, look at error and take appropriate action
-//                                    NSLog(@"failed");
-//                                }
-//                            }];
-//    } else {
-//        // Could not evaluate policy; look at authError and present an appropriate message to user
-//        NSLog(@"not support");
-//    }
 }
 
 -(void)touchVerification
